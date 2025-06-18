@@ -1,32 +1,23 @@
-# 🐍 Python 3.11 Installer with SSL (Debian)
+# 🐍 Python 3.11 Installer with OpenSSL (Debian Buster)
 
-![Build Status](https://img.shields.io/badge/status-tested-green)
-![Debian](https://img.shields.io/badge/OS-Debian%2010+-blue)
-![Python](https://img.shields.io/badge/Python-3.11.x-important)
-![License](https://img.shields.io/badge/license-MIT-brightgreen)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Python 3.11](https://img.shields.io/badge/python-3.11-blue.svg)](https://www.python.org/downloads/release/python-3119/)
+[![Debian 10](https://img.shields.io/badge/target-Debian%2010%20(buster)-a80030)](https://www.debian.org/releases/buster/)
 
-> Compile and install Python 3.11 with full SSL support into `/opt/python3.11` — ideal for Django 5.1 apps.
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/YOUR_USERNAME/python3.11-openssl-installer/main/assets/banner.png" alt="Python Installer Banner" width="700">
-</p>
-
----
+This installer builds Python 3.11.9 from source with full SSL support on Debian 10 (buster) and installs it in `/opt/python3.11`.
 
 ## ✅ Features
 
-- Installs Python **3.11.9** (latest 3.11.x)
-- Compiles **OpenSSL 1.1.1w** from source
-- Ensures full `ssl` module compatibility (e.g., for pip, requests)
-- Isolated in `/opt/python3.11` to avoid system conflicts
-- Ideal for **virtual environments**, production servers, and Django 5.1
+- 🛠️ Compiles Python 3.11.9 from source
+- 🔒 Includes OpenSSL 1.1.1w compiled from source
+- 📦 Installs `pip` and `setuptools`
+- ✅ Tested on minimal cloud VMs
+- 📁 Installs in `/opt/python3.11`, avoiding conflicts
 
----
-
-## 📦 Installation
+## 🚀 How to Use
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/python3.11-openssl-installer.git
-cd python3.11-openssl-installer
-chmod +x install_python_3_11_ssl.sh
-./install_python_3_11_ssl.sh
+git clone https://github.com/tribecabrasil/-python-3.11-openssl-installer.git
+cd -python-3.11-openssl-installer
+chmod +x install_python_3_11_custom_ssl.sh
+sudo ./install_python_3_11_custom_ssl.sh
