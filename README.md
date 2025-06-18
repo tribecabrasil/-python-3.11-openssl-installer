@@ -31,3 +31,52 @@ git clone https://github.com/tribecabrasil/-python-3.11-openssl-installer.git
 cd -python-3.11-openssl-installer
 chmod +x install_python_3_11_custom_ssl.sh
 sudo ./install_python_3_11_custom_ssl.sh
+```
+
+---
+
+## ✅ Post-installation Check
+
+```bash
+/opt/python3.11/bin/python3.11 --version
+# Python 3.11.9
+
+/opt/python3.11/bin/python3.11 -m ssl
+# (no errors = success ✅)
+```
+
+---
+
+## 📁 About this Repository
+
+This repository is maintained by [tribecabrasil](https://github.com/tribecabrasil) to ensure reproducible and secure Python environments on cloud infrastructure that runs Debian 10 (buster).
+
+It is designed for developers and product teams deploying Django 5.1+ or AI/ML workloads on minimal VMs that require OpenSSL compatibility.
+
+> MIT Licensed — no dependencies beyond `build-essential`, `libssl-dev`, `zlib1g-dev`, and standard GNU tools.
+
+---
+
+## 📘 Em Português (🇧🇷)
+
+Este instalador compila o **Python 3.11.9** com suporte completo a **SSL** (OpenSSL 1.1.1w) para **Debian 10 (buster)**, ideal para servidores em nuvem que exigem controle total do ambiente.
+
+Instala em `/opt/python3.11`, evitando conflitos com versões do sistema.
+
+### Como usar
+
+```bash
+git clone https://github.com/tribecabrasil/-python-3.11-openssl-installer.git
+cd -python-3.11-openssl-installer
+chmod +x install_python_3_11_custom_ssl.sh
+sudo ./install_python_3_11_custom_ssl.sh
+```
+
+Após instalar, verifique:
+
+```bash
+/opt/python3.11/bin/python3.11 --version
+/opt/python3.11/bin/python3.11 -m ssl
+```
+
+Você verá o Python funcionando com SSL sem erros. ✅
