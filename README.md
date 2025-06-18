@@ -1,45 +1,32 @@
-# Instalador Python 3.11.9 com OpenSSL (Debian)
+# 🐍 Python 3.11 Installer with SSL (Debian)
 
-Este script instala o **Python 3.11.9** com suporte completo a **SSL**, em sistemas Debian. É ideal para uso com **Django 5.1** e compatível com projetos que exigem segurança em conexões HTTPS.
+![Build Status](https://img.shields.io/badge/status-tested-green)
+![Debian](https://img.shields.io/badge/OS-Debian%2010+-blue)
+![Python](https://img.shields.io/badge/Python-3.11.x-important)
+![License](https://img.shields.io/badge/license-MIT-brightgreen)
 
-## ✅ O que este script faz
+> Compile and install Python 3.11 with full SSL support into `/opt/python3.11` — ideal for Django 5.1 apps.
 
-- Instala e compila o **OpenSSL 1.1.1w** em `/opt/openssl-1.1.1w`
-- Instala o **Python 3.11.9** com suporte ao OpenSSL customizado
-- Garante `pip` e `setuptools` atualizados
-- Mantém todas as instalações fora do sistema (`/opt/python3.11`)
-
-## 🔧 Requisitos
-
-```bash
-sudo apt update && sudo apt install -y build-essential libffi-dev libbz2-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev zlib1g-dev wget tar xz-utils
-```
-
-## 🚀 Como usar
-
-```bash
-chmod +x install_python_3_11_with_ssl.sh
-sudo ./install_python_3_11_with_ssl.sh
-```
-
-## 🧪 Verifique
-
-```bash
-/opt/python3.11/bin/python3.11 --version
-/opt/python3.11/bin/python3.11 -m ssl
-```
-
-## 🛠️ Recomendações
-
-Crie um ambiente virtual com:
-
-```bash
-/opt/python3.11/bin/python3.11 -m venv ~/envs/py11
-source ~/envs/py11/bin/activate
-```
+<p align="center">
+  <img src="https://raw.githubusercontent.com/YOUR_USERNAME/python3.11-openssl-installer/main/assets/banner.png" alt="Python Installer Banner" width="700">
+</p>
 
 ---
 
-Script testado em:  
-**Debian 10 (buster)**  
-**CPU 1 vCore, 2 GiB RAM, KVM Virtualized**
+## ✅ Features
+
+- Installs Python **3.11.9** (latest 3.11.x)
+- Compiles **OpenSSL 1.1.1w** from source
+- Ensures full `ssl` module compatibility (e.g., for pip, requests)
+- Isolated in `/opt/python3.11` to avoid system conflicts
+- Ideal for **virtual environments**, production servers, and Django 5.1
+
+---
+
+## 📦 Installation
+
+```bash
+git clone https://github.com/YOUR_USERNAME/python3.11-openssl-installer.git
+cd python3.11-openssl-installer
+chmod +x install_python_3_11_ssl.sh
+./install_python_3_11_ssl.sh
